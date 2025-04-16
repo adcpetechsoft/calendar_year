@@ -1,0 +1,5 @@
+#vscode configuration folder
+.vscode/
+
+# unit/linux executable binary file
+calendar_year
