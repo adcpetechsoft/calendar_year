@@ -1,17 +1,6 @@
-# Variables
-PREFIX ?= 
-BINDIR ?= $(PREFIX)/bin
-TARGET = my_program
+calendar_year:
+	g++ ./calendar_year.cpp -o calendar_year
 
-# Install and Uninstall
-install:
-	@echo "Installing $(TARGET) to $(BINDIR)"
-	@mkdir -p $(BINDIR)
-	@cp $(TARGET) $(BINDIR)/$(TARGET)
+clean:
+	rm -r ./calendar_year
 
-uninstall:
-	@echo "Uninstalling $(TARGET) from $(BINDIR)"
-	@rm -f $(BINDIR)/$(TARGET)
-
-# Phony targets
-.PHONY: install uninstall

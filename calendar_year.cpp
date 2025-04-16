@@ -1,7 +1,19 @@
+/*
+    project created by: [AMD]
+    With the assistance  of Github Copilot
+    Date: 2023-10-01
+
+    Not intended for production use.
+    This code is a simple command-line calendar program that displays the calendar for a given year.
+*/
+
+// preprocessor directives
+
 #include <iostream>
 #include <iomanip>
 #include <string>
 using namespace std;
+
 
 // Function to check if a year is a leap year
 bool isLeapYear(int year) {
